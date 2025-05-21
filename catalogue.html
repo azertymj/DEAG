@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - DEAG</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/catalogue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+24174000000"><i class="fas fa-phone"></i> +241 74 00 00 00</a>
+                <a href="mailto:contact@elevage-pro-gabon.com"><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="DEAG">
+                    <span class="subtitle">Excellence & Innovation</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/24174000000" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Fermer le menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-contact">
+            <a href="tel:+24174000000" class="phone-link">
+                <i class="fas fa-phone"></i> +241 74 00 00 00
+            </a>
+            <a href="https://wa.me/24174000000" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <main class="catalogue-main">
+        <div class="container">
+            <h1>Catalogue des Produits</h1>
+            
+            <!-- Barre de recherche unique -->
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" class="search-bar" placeholder="Rechercher un produit...">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions"></div>
+            </div>
+
+            <!-- Options de tri et filtres -->
+            <div class="catalogue-actions">
+                <button class="filters-toggle">
+                    <i class="fas fa-filter"></i> Filtres
+                    <span class="filters-count">0</span>
+                </button>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="popular">Popularité</option>
+                        <option value="recent">Plus récents</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="catalogue-content">
+                <!-- Filtres -->
+                <div class="filters-section">
+                    <div class="filters-mobile-header">
+                        <div class="filters-header-content">
+                            <h2>Filtres</h2>
+                            <button class="filters-close" aria-label="Fermer les filtres">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="filters-actions">
+                            <button class="btn-clear-filters">Réinitialiser</button>
+                            <button class="btn-apply-filters">Appliquer</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filters-grid">
+                        <div class="filter-group">
+                            <h3>Type d'Animal</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="animal" value="volaille">
+                                    <span>Volaille</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="animal" value="porc">
+                                    <span>Porc</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="animal" value="bovin">
+                                    <span>Bovin</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="animal" value="caprin">
+                                    <span>Caprin</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h3>Catégorie</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="aliments">
+                                    <span>Aliments</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="equipements">
+                                    <span>Équipements</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="veterinaire">
+                                    <span>Produits Vétérinaires</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="category" value="accessoires">
+                                    <span>Accessoires</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Prix</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="asc">
+                                    <span>Prix croissant</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="radio" name="price" value="desc">
+                                    <span>Prix décroissant</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Disponibilité</h3>
+                            <div class="filter-options">
+                                <label class="filter-option">
+                                    <input type="checkbox" name="availability" value="en-stock">
+                                    <span>En Stock</span>
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" name="availability" value="promotion">
+                                    <span>En Promotion</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grille des produits -->
+                <div class="products-grid">
+                    <!-- Exemple de carte produit -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge promotion">Promo</div>
+                            <img src="img/products/aliment-volaille.jpg" alt="Aliment pour volaille">
+                            <button class="btn-favorite" aria-label="Ajouter aux favoris">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Aliment Volaille Croissance</h3>
+                            <p class="product-category">Aliments > Volaille</p>
+                            <p class="product-price">15 000 FCFA</p>
+                            <div class="product-availability in-stock">
+                                <i class="fas fa-check-circle"></i> En stock
+                            </div>
+                            <div class="product-actions">
+                                <a href="produit-detail.html" class="btn btn-secondary">Détails</a>
+                                <a href="https://wa.me/24174000000" class="btn btn-primary" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Commander
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Autres cartes produits similaires -->
+                    <!-- À répéter pour chaque produit -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>À propos</h3>
+                    <p>DEAG, leader dans l'élevage professionnel au Gabon, s'engage à fournir des produits et services de qualité supérieure pour le développement de l'agriculture locale.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Libreville, Gabon</li>
+                        <li><i class="fas fa-phone"></i> +241 74 00 00 00</li>
+                        <li><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 DEAG. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/catalogue.js"></script>
+</body>
+</html> 

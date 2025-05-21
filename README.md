@@ -61,4 +61,4 @@ Pour toute question ou suggestion, contactez-nous :
 
 ## 📄 Licence
 
-© 2024 DEAG. Tous droits réservés. 
+© 2025 DEAG. Tous droits réservés. 

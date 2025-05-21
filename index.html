@@ -6,6 +6,8 @@
     <title>Accueil - DEAG</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/components/chatbot.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -134,6 +136,90 @@
         </div>
     </section>
 
+    <!-- Section Produits Recommandés -->
+    <section class="recommended-products">
+        <div class="container">
+            <h2 class="section-title">Produits Recommandés</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/mangeoire-automatique.jpg" alt="Mangeoire Automatique">
+                            <div class="view-details">
+                                <a href="catalogue.html" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Mangeoire Automatique Pro</h3>
+                            <p class="description">Distribution automatique pour un élevage optimal</p>
+                            <p class="price">89.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/incubateur.jpg" alt="Incubateur">
+                            <div class="view-details">
+                                <a href="catalogue.html" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Incubateur Premium</h3>
+                            <p class="description">Capacité de 100 œufs avec contrôle digital</p>
+                            <p class="price">299.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/abreuvoir.jpg" alt="Abreuvoir">
+                            <div class="view-details">
+                                <a href="catalogue.html" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Abreuvoir Automatique</h3>
+                            <p class="description">Système d'abreuvement professionnel</p>
+                            <p class="price">45.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/aliments-poules.jpg" alt="Aliments Poules">
+                            <div class="view-details">
+                                <a href="catalogue.html" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Aliment Pondeuses Premium</h3>
+                            <p class="description">Nutrition complète pour pondeuses</p>
+                            <p class="price">15.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/vitamines.jpg" alt="Vitamines">
+                            <div class="view-details">
+                                <a href="catalogue.html" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Complexe Vitaminé</h3>
+                            <p class="description">Supplément nutritionnel complet</p>
+                            <p class="price">12.900 FCFA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-button prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-button next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services">
         <div class="container">
@@ -148,11 +234,6 @@
                     <i class="fas fa-piggy-bank"></i>
                     <h3>Élevage Porcin</h3>
                     <p>Expertise en production porcine</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-clinic-medical"></i>
-                    <h3>Santé Animale</h3>
-                    <p>Produits vétérinaires de qualité</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-tools"></i>
@@ -180,12 +261,12 @@
                     <p>Équipements professionnels</p>
                     <a href="catalogue.html#materiel" class="btn btn-secondary">Voir plus</a>
                 </div>
-                <div class="product-card">
+                <!-- <div class="product-card">
                     <img src="img/products/produits-veterinaires.jpg" alt="Produits vétérinaires">
                     <h3>Produits Vétérinaires</h3>
                     <p>Santé et bien-être animal</p>
                     <a href="catalogue.html#veterinaire" class="btn btn-secondary">Voir plus</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -279,6 +360,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/components/chatbot.js" defer></script>
+    <script src="js/components/carousel.js" defer></script>
 </body>
 </html>

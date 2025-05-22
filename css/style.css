@@ -8,6 +8,12 @@
     --color-vert-vif: #76B947;
     --color-texte-fonce: #333;
     --color-texte-gris: #666;
+    
+    /* Variables de typographie */
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
 }
 
 /* Reset CSS basique */
@@ -18,16 +24,19 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
     color: var(--color-texte-fonce);
-    line-height: 1.6;
     background-color: var(--color-blanc-casse);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secondary);
     color: var(--color-vert-foret);
     margin-bottom: 0.8em;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 .container {

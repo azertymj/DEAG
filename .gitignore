@@ -37,3 +37,6 @@ build/
 *.bak
 *~
 *.swp 
+
+#img
+/img/products/*

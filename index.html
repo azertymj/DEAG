@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - DEAG</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/components/chatbot.css">
+    <link rel="stylesheet" href="css/components/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+24174000000"><i class="fas fa-phone"></i> +241 74 00 00 00</a>
+                <a href="mailto:contact@elevage-pro-gabon.com"><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo DEAG">
+                    <!-- <span class="subtitle">Excellence & Innovation</span> -->
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="catalogue.php">Catalogue</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/24174000000" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <div class="search-container">
+            <form class="search-form" action="/search" method="GET">
+                <input type="search" class="search-input" placeholder="Rechercher un produit, un service..." aria-label="Rechercher">
+                <button type="submit" class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="DEAG" height="40">
+            </div>
+            <button class="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section avec Slider -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Excellence & Innovation dans l'Élevage</h1>
+                        <p>Votre partenaire de confiance pour un élevage performant et durable au Gabon</p>
+                        <div class="hero-buttons">
+                            <a href="catalogue.php" class="btn btn-primary">Découvrir nos produits</a>
+                            <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Solutions Complètes pour l'Élevage</h1>
+                        <p>Des équipements modernes et des produits de qualité pour votre succès</p>
+                        <div class="hero-buttons">
+                            <a href="catalogue.php" class="btn btn-primary">Voir le catalogue</a>
+                            <a href="about.html" class="btn btn-outline">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Expertise & Accompagnement</h1>
+                        <p>Une équipe d'experts à votre service pour développer votre élevage</p>
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+                            <a href="actualites.html" class="btn btn-outline">Nos actualités</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-controls">
+            <button class="hero-prev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+            <div class="hero-dots"></div>
+            <button class="hero-next" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Section Produits Recommandés -->
+    <section class="recommended-products">
+        <div class="container">
+            <h2 class="section-title">Produits Recommandés</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/mangeoire-automatique.jpg" alt="Mangeoire Automatique">
+                            <div class="view-details">
+                                <a href="catalogue.php" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Mangeoire Automatique Pro</h3>
+                            <p class="description">Distribution automatique pour un élevage optimal</p>
+                            <p class="price">89.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/incubateur.jpg" alt="Incubateur">
+                            <div class="view-details">
+                                <a href="catalogue.php" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Incubateur Premium</h3>
+                            <p class="description">Capacité de 100 œufs avec contrôle digital</p>
+                            <p class="price">299.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/abreuvoir.jpg" alt="Abreuvoir">
+                            <div class="view-details">
+                                <a href="catalogue.php" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Abreuvoir Automatique</h3>
+                            <p class="description">Système d'abreuvement professionnel</p>
+                            <p class="price">45.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/aliments-poules.jpg" alt="Aliments Poules">
+                            <div class="view-details">
+                                <a href="catalogue.php" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Aliment Pondeuses Premium</h3>
+                            <p class="description">Nutrition complète pour pondeuses</p>
+                            <p class="price">15.900 FCFA</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-container">
+                            <img src="img/products/vitamines.jpg" alt="Vitamines">
+                            <div class="view-details">
+                                <a href="catalogue.php" class="view-details-btn">Voir détails</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item-content">
+                            <h3>Complexe Vitaminé</h3>
+                            <p class="description">Supplément nutritionnel complet</p>
+                            <p class="price">12.900 FCFA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-button prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-button next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-egg"></i>
+                    <h3>Élevage Avicole</h3>
+                    <p>Solutions complètes pour l'élevage de volailles</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>Élevage Porcin</h3>
+                    <p>Expertise en production porcine</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Équipements</h3>
+                    <p>Matériel professionnel d'élevage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Nos Produits Phares</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="img/products/aliments-volaille.jpg" alt="Aliments pour volaille">
+                    <h3>Aliments pour Volaille</h3>
+                    <p>Nutrition optimale pour vos volailles</p>
+                    <a href="catalogue.php#volaille" class="btn btn-secondary">Voir plus</a>
+                </div>
+                <div class="product-card">
+                    <img src="img/products/materiel-elevage.jpg" alt="Matériel d'élevage">
+                    <h3>Matériel d'Élevage</h3>
+                    <p>Équipements professionnels</p>
+                    <a href="catalogue.php#materiel" class="btn btn-secondary">Voir plus</a>
+                </div>
+                <!-- <div class="product-card">
+                    <img src="img/products/produits-veterinaires.jpg" alt="Produits vétérinaires">
+                    <h3>Produits Vétérinaires</h3>
+                    <p>Santé et bien-être animal</p>
+                    <a href="catalogue.php#veterinaire" class="btn btn-secondary">Voir plus</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">Dernières Actualités</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="img/news/formation.jpg" alt="Formation en élevage">
+                    <div class="news-content">
+                        <h3>Formation en Techniques d'Élevage</h3>
+                        <p>Participez à nos sessions de formation professionnelle</p>
+                        <a href="actualites.html" class="read-more">Lire plus</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="img/news/innovation.jpg" alt="Innovation en élevage">
+                    <div class="news-content">
+                        <h3>Nouvelles Technologies d'Élevage</h3>
+                        <p>Découvrez les dernières innovations du secteur</p>
+                        <a href="actualites.html" class="read-more">Lire plus</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="img/news/promotion.jpg" alt="Promotions">
+                    <div class="news-content">
+                        <h3>Offres Spéciales</h3>
+                        <p>Profitez de nos promotions sur les équipements</p>
+                        <a href="actualites.html" class="read-more">Lire plus</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- À propos -->
+                <div class="footer-column">
+                    <h3>À propos</h3>
+                    <p>DEAG, leader dans l'élevage professionnel au Gabon, s'engage à fournir des produits et services de qualité supérieure pour le développement de l'agriculture locale.</p>
+                </div>
+
+                <!-- Liens rapides -->
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="catalogue.php">Catalogue</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Libreville, Gabon</li>
+                        <li><i class="fas fa-phone"></i> +241 74 00 00 00</li>
+                        <li><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form" action="#" method="POST">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit">S'abonner</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 DEAG. Tous droits réservés.</p>
+                <p><i class="fab fa-github"></i><a style="color: white;" href="https://azertymj.github.io/" target="_blank"> Azertymj</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
+    <script src="js/components/chatbot.js" defer></script>
+    <script src="js/components/carousel.js" defer></script>
+</body>
+</html>

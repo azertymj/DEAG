@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DEAG</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/contact.css">
+    <link rel="stylesheet" href="css/components/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+24174000000"><i class="fas fa-phone"></i> +241 74 00 00 00</a>
+                <a href="mailto:contact@elevage-pro-gabon.com"><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo DEAG">
+                    <!-- <span class="subtitle">Excellence & Innovation</span> -->
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="catalogue.php">Catalogue</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/24174000000" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <button class="burger-menu" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Fermer le menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="catalogue.php">Catalogue</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-contact">
+            <a href="tel:+24174000000" class="phone-link">
+                <i class="fas fa-phone"></i> +241 74 00 00 00
+            </a>
+            <a href="https://wa.me/24174000000" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Contactez-nous</h1>
+                <p>Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos projets d'élevage.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Informations de contact -->
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <ul class="contact-info-list">
+                            <li class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Notre Adresse</h3>
+                                    <p>123 Avenue de l'Indépendance<br>Libreville, Gabon</p>
+                                </div>
+                            </li>
+                            <li class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Téléphone</h3>
+                                    <a href="tel:+24174000000">+241 74 00 00 00</a>
+                                </div>
+                            </li>
+                            <li class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <a href="mailto:contact@elevage-pro-gabon.com">contact@elevage-pro-gabon.com</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="opening-hours">
+                            <h3><i class="far fa-clock"></i> Horaires d'ouverture</h3>
+                            <ul class="hours-list">
+                                <li class="hours-item">
+                                    <span>Lundi - Vendredi</span>
+                                    <span>8h00 - 18h00</span>
+                                </li>
+                                <li class="hours-item">
+                                    <span>Samedi - Dimanche</span>
+                                    <span>9h00 - 12h00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form">
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label" for="nom">Nom</label>
+                                <input type="text" class="form-control" id="nom" name="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="prenom">Prénom</label>
+                                <input type="text" class="form-control" id="prenom" name="prenom" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="telephone">Téléphone</label>
+                                <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                            </div>
+                                                        <div class="form-group full-width">                                <label class="form-label" for="sujet">Sujet</label>                                <select class="form-control" id="sujet" name="sujet" required>                                    <option value="">Choisissez un sujet</option>                                    <option value="commande">Question sur une commande</option>                                    <option value="produit">Information sur un produit</option>                                    <option value="technique">Support technique</option>                                    <option value="devis">Demande de devis</option>                                    <option value="partenariat">Proposition de partenariat</option>                                    <option value="autre">Autre</option>                                </select>                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Carte Google Maps -->
+            <section class="map-section">
+                <h2>Notre Localisation</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.723434693635!2d9.606694576143635!3d0.39716079004675994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjMnNDkuOCJOLCA5wrAzNiczMi4wIkU!5e0!3m2!1sfr!2sfr!4v1710425163099!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>À propos</h3>
+                    <p>DEAG, leader dans l'élevage professionnel au Gabon, s'engage à fournir des produits et services de qualité supérieure pour le développement de l'agriculture locale.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="catalogue.php">Catalogue</a></li>
+                        <li><a href="actualites.html">Actualités</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Libreville, Gabon</li>
+                        <li><i class="fas fa-phone"></i> +241 74 00 00 00</li>
+                        <li><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 DEAG. Tous droits réservés.</p>
+                <p><i class="fab fa-github"></i><a style="color: white;" href="https://azertymj.github.io/" target="_blank"> Azertymj</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/components/chatbot.js" defer></script>
+</body>
+</html> 

@@ -886,3 +886,33 @@ p {
         transform: translateY(0);
     }
 } 
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 180px; /* Ajuste selon besoin */
+}
+
+.product-category,
+.product-animal,
+.product-capacity,
+.product-availability {
+  margin-bottom: 0.5rem;
+}
+
+.product-availability {
+  margin-bottom: 1rem;
+}
+
+.product-actions {
+  margin-top: auto;
+} 

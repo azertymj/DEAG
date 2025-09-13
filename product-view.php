@@ -24,6 +24,10 @@ if (!$product) {
     <link rel="stylesheet" href="css/components/chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easyzoom/2.5.0/easyzoom.min.css" />
+    <style>
+/* Suppression des styles Lightbox inutiles */
+    </style>
 </head>
 <body>
     <!-- Top Bar -->
@@ -34,9 +38,9 @@ if (!$product) {
                 <a href="mailto:contact@elevage-pro-gabon.com"><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</a>
             </div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a> -->
             </div>
         </div>
     </div>
@@ -72,7 +76,11 @@ if (!$product) {
         <div class="product-container">
             <!-- Gallery Section -->
             <div class="product-gallery">
-                <img src="img/products/<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['name']) ?>" class="main-image">
+                <div class="easyzoom easyzoom--overlay">
+                    <a href="img/products/<?= htmlspecialchars($product['image']) ?>">
+                        <img src="img/products/<?= htmlspecialchars($product['image']) ?>" alt="<?= htmlspecialchars($product['name']) ?>" class="main-image" style="max-width:100%;height:auto;" />
+                    </a>
+                </div>
             </div>
             <!-- Product Info Section -->
             <div class="product-info">
@@ -208,6 +216,15 @@ if (!$product) {
                 console.error('Éléments du chat introuvables');
             }
         }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easyzoom/2.5.0/easyzoom.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var $easyzoom = document.querySelectorAll('.easyzoom');
+        $easyzoom.forEach(function(el) {
+          new window.EasyZoom(el);
+        });
+      });
     </script>
     <script src="js/script.js" defer></script>
     <script src="js/components/chatbot.js" defer></script>

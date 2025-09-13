@@ -175,9 +175,9 @@ function build_filter_url($newParams = []) {
                 <a href="mailto:contact@elevage-pro-gabon.com"><i class="fas fa-envelope"></i> contact@elevage-pro-gabon.com</a>
             </div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <!-- <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a> -->
             </div>
         </div>
     </div>

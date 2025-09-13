@@ -56,48 +56,8 @@ if ($_SESSION['login_blocked_until'] > time()) {
 <head>
     <meta charset="UTF-8">
     <title>Connexion Admin</title>
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/components/admin.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%); }
-        .login-logo {
-            display: block;
-            margin: 0 auto 18px auto;
-            width: 80px;
-        }
-        .admin-form-container {
-            box-shadow: 0 4px 24px rgba(44,62,80,0.10);
-        }
-        .admin-form input:focus, .admin-form textarea:focus {
-            border-color: #1abc9c;
-            outline: none;
-            background: #eafaf7;
-        }
-        .welcome-msg {
-            text-align: center;
-            color: #2980b9;
-            font-size: 1.1em;
-            margin-bottom: 18px;
-        }
-        .back-link {
-            display: block;
-            text-align: center;
-            margin-top: 18px;
-            color: #2980b9;
-            text-decoration: underline;
-            font-size: 0.98em;
-        }
-        .flash-success {
-            background: #eafaf7;
-            color: #159c85;
-            border: 1px solid #b7e4da;
-            padding: 10px 14px;
-            border-radius: 5px;
-            margin-bottom: 18px;
-            font-weight: 600;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <div class="admin-form-container">
